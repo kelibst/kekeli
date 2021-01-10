@@ -1,0 +1,163 @@
+.active {
+  color: var(--yelow);
+  border-bottom: 4px solid var(--yelow);
+  transition: all 0.4s;
+  width: 100% !important;
+}
+
+.side {
+  &-toggled {
+    width: 300px;
+    min-width: 300px;
+    transition: all 4s;
+  }
+  &-hidden{
+      transform: translateX(-300px);
+      width: 0;
+      min-width: 0;
+      display: none;
+      transition: all 4s;
+  }
+  &-nav {
+    margin-top: 5rem;
+  }
+  &-link {
+    margin: 1rem;
+    font-size: 1.3rem;
+    width: 0% !important;
+
+    &:hover {
+      color: var(--yelow);
+      border-bottom: 4px solid var(--yelow);
+      transition: all 0.4s;
+      width: 100% !important;
+    }
+  }
+  &-li {
+    padding: 1rem;
+  }
+}
+
+.side-nav {
+  margin-top: 5rem;
+}
+
+.social {
+  bottom: 0;
+  position: absolute;
+
+  &-ul {
+    display: flex;
+  }
+
+  &-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    &:hover {
+      color: black;
+      background: var(--yelow);
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+    }
+  }
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  margin: 2rem;
+  font-weight: 100;
+}
+.sidebar {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  position: relative;
+}
+
+ul.nav-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  &-menu {
+    background: var(--yelow);
+    font-size: 1.4rem;
+    border-radius: 0 2rem 2rem 0;
+    right: -40px;
+    transition: all .4s;
+    align-self: center;
+
+    &:hover {
+      background-color: #333;
+      transition: all 0.2s;
+      background-color: white;
+      border: .5px solid grey;
+    }
+    &:focus {
+      outline: none;
+      transition: all 0.2s;
+      border: .5px solid grey;
+    }
+  }
+}
+.active {
+  color: var(--yelow);
+  border-bottom: 4px solid var(--yelow);
+  transition: all 0.4s;
+  width: 100% !important;
+}
+
+.side {
+  &-nav {
+    margin-top: 5rem;
+  }
+  &-link {
+    margin: 1rem;
+    font-size: 1.3rem;
+    width: 0% !important;
+
+    &:hover {
+      color: var(--yelow);
+      border-bottom: 4px solid var(--yelow);
+      transition: all 0.4s;
+      width: 100% !important;
+    }
+  }
+  &-li {
+    padding: 1rem;
+  }
+}
+
+.side-nav {
+  margin-top: 5rem;
+}
+
+.social {
+  bottom: 0;
+  position: absolute;
+
+  &-ul {
+    display: flex;
+  }
+
+  &-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    &:hover {
+      color: black;
+      background: var(--yelow);
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+    }
+  }
+}

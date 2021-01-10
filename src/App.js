@@ -1,3 +1,5 @@
+import {  useState } from "react";
+import Icofont from "react-icofont";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import SideBar from "./components/layouts/SideBar";
@@ -7,16 +9,18 @@ import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
 
 const App = () => {
+  const [show, setShow ] = useState(false)
   return (
     <div className="wrapper">
       <div className="container">
         <BrowserRouter>
-        <SideBar />
+        <SideBar show={show} setShow={setShow} />
+        <button type="button" className="btn btn-menu" onClick={ () => setShow(!show)}><Icofont icon={show ? "rounded-left icofont-2x" : "rounded-right icofont-2x"} /></button>
           <Switch>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/projects" component={Projects} />
-            <Route  path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/" component={Home} />
           </Switch>
         </BrowserRouter>
       </div>

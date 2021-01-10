@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Open+Sans&family=Raleway&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&family=Rochester&display=swap");
 
 :root {
-    --yelow: rgb(251, 226, 0);
-  }
-   
+  --yelow: rgb(251, 226, 0);
+}
 
 body {
   padding: 0;
@@ -12,11 +11,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.brand {
-  font-family: "Big Shoulders Stencil Text", cursive;
-  margin: 2rem;
-  font-weight: 100;
-}
 .wrapper {
   position: fixed;
   min-width: 100%;
@@ -24,31 +18,8 @@ body {
   display: flex;
 }
 
-.sidebar {
-  width: 300px;
-  min-width: 300px;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: black;
-  color: white;
-}
-
-ul.nav-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   display: flex;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .text {
@@ -58,57 +29,5 @@ a {
 
   &-center {
     text-align: center;
-  }
-}
-
-.active{
-    color: var(--yelow);
-    border-bottom: 4px solid var(--yelow);
-    transition: all .4s;
-    width: 100% !important;
-}
-
-.side {
-  &-nav {
-    margin-top: 5rem;
-  }
-  &-link {
-    margin: 1rem;
-    font-size: 1.3rem;
-    width: 0% !important;
-
-    &:hover{
-        color: var(--yelow);
-        border-bottom: 4px solid var(--yelow);
-        transition: all .4s;
-        width: 100% !important;
-    }
-  }
-  &-li {
-    padding: 1rem;
-  }
-}
-
-.side-nav {
-  margin-top: 5rem;
-}
-
-.social {
-  bottom: 0;
-  position: absolute;
-
-  &-ul {
-    display: flex;
-  }
-  &-li {
-    padding: 1rem;
-  }
-  &-li:hover {
-    background: var(--yelow);
-    border-radius: 0.5rem;
-    transition: all 0.2s;
-  }
-  &-link {
-    font-size: 1.5rem;
   }
 }
