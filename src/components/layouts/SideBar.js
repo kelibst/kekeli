@@ -11,8 +11,9 @@ const SideBar = (props) => {
     useEffect(() => {
        if (show){
          console.log('run')
-        tl.to(
-          ref, 0.3, 
+        tl
+        .to(
+          ref, 0.4, 
           {
             width: 300,
             minWidth: 300,

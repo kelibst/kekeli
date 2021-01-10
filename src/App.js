@@ -10,9 +10,7 @@ import Projects from "./components/pages/Projects";
 
 const App = () => {
   const [show, setShow] = useState(false);
-  useEffect(() => {
-    console.log(show);
-  });
+  const rot = show ? 'reverse' : 'stand';
   return (
     <div className="wrapper">
       <div className="container">
@@ -20,13 +18,11 @@ const App = () => {
           <SideBar show={show} />
           <button
             type="button"
-            className="btn btn-menu"
+            className={`btn btn-menu ${rot}`}
             onClick={() => setShow(!show)}
           >
             <Icofont
-              icon={
-                show ? "rounded-left icofont-2x" : "rounded-right icofont-2x"
-              }
+              icon="rounded-right icofont-2x"
             />
           </button>
           <Switch>
