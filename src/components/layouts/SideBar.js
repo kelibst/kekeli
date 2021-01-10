@@ -41,7 +41,7 @@ const SideBar = (props) => {
           </li>
           <li className="side-li">
             <NavLink to="/about" className="side-link text-white">
-              <Icofont icon="user" /> About
+              <Icofont icon="user" /> About Me
             </NavLink>
           </li>
           <li className="side-li">

@@ -10,11 +10,11 @@ gsap.registerPlugin(TextPlugin, RoughEase);
 const Home = () => {
   const words = [
     "Kekeli Dogbevi Jiresse",
-    "Ruby Developer",
-    "Ruby on Rails Developer",
-    "Front-End Software Developer",
-    "Back-End Software Developer",
-    "Full-Stack Software Developer",
+    "A Ruby Developer",
+    "A Ruby on Rails Developer",
+    "A Front-End Software Developer",
+    "A Back-End Software Developer",
+    "A Full-Stack Software Developer",
   ];
 
   let cur = useRef(null)
@@ -60,7 +60,7 @@ const Home = () => {
     <div className="home">
       <div className="home-content">
         
-        <h4 ref={el => { hi = el }} className="home-head"><span ref={el => { box = el }} className="box"></span>Hello, I am</h4>
+        <h4 ref={el => { hi = el }} className="home-head"><span ref={el => { box = el }} className="box"></span>Hello, I am,</h4>
         <h1 className="home-header">
           <span ref={el => { textAnim = el }} className="text"></span>
           <span  ref={el => { cur = el }} className="cursor">_</span>

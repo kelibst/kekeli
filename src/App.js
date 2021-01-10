@@ -10,21 +10,22 @@ import Projects from "./components/pages/Projects";
 
 const App = () => {
   const [show, setShow] = useState(false);
-  const rot = show ? 'reverse' : 'stand';
+  const rot = show ? "reverse" : "stand";
   return (
     <div className="wrapper">
       <div className="container">
         <BrowserRouter>
           <SideBar show={show} />
-          <button
-            type="button"
-            className={`btn btn-menu ${rot}`}
-            onClick={() => setShow(!show)}
-          >
-            <Icofont
-              icon="rounded-right icofont-2x"
-            />
-          </button>
+          <div className="btn-container">
+            <button
+              type="button"
+              className={`btn btn-menu ${rot}`}
+              onClick={() => setShow(!show)}
+            >
+              <Icofont icon="rounded-right icofont-2x" />
+            </button>
+          </div>
+
           <Switch>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
