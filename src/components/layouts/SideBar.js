@@ -5,23 +5,27 @@ import { NavLink } from "react-router-dom";
 import './Sidebar.scss'
 
 const SideBar = (props) => {
-    const { show, setShow } = props
+    const { show } = props
     let ref = useRef(null);
     let tl = gsap.timeline();
     useEffect(() => {
        if (show){
+         console.log('run')
         tl.to(
           ref, 0.3, 
           {
             width: 300,
+            minWidth: 300,
             opacity: 1,
             ease: "power3.inOut"
           }
         ) 
        }else{
+        console.log('run esje')
         tl.to(ref, 0.3, {
           opacity: 0, 
           width: 0,
+          minWidth: 0,
         }) 
        }
     }, [show])
