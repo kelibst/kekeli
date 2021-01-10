@@ -90,13 +90,13 @@ ul.nav-ul {
 
 .btn {
   &-menu {
-    background: var(--yelow);
     font-size: 1.4rem;
     border-radius: 0 2rem 2rem 0;
     right: -40px;
     transition: all .4s;
     align-self: center;
-
+    border: .5px solid grey;
+    
     &:hover {
       background-color: #333;
       transition: all 0.2s;

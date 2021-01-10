@@ -1,4 +1,4 @@
-import { TweenLite, Power4 } from "gsap/gsap-core";
+import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 import Icofont from "react-icofont";
 import { NavLink } from "react-router-dom";
@@ -7,21 +7,26 @@ import './Sidebar.scss'
 const SideBar = (props) => {
     const { show, setShow } = props
     let ref = useRef(null);
-
+    let tl = gsap.timeline();
     useEffect(() => {
        if (show){
-           console.log('run')
-        TweenLite.to(ref, 0.3, {
-            opacity: 0, 
-            width: 0,
-            left: "300px",
-            ease: Power4.easeOut
-          }) 
+        tl.to(
+          ref, 0.3, 
+          {
+            width: 300,
+            opacity: 1,
+            ease: "power3.inOut"
+          }
+        ) 
+       }else{
+        tl.to(ref, 0.3, {
+          opacity: 0, 
+          width: 0,
+        }) 
        }
     }, [show])
-    const sideToggle = show ? "side-toggled" : "side-hidden";
   return (
-    <div className={`${sideToggle} sidebar`} ref={el => { ref = el }}>
+    <div className={`sidebar`} ref={el => { ref = el }}>
       <h1 className="brand">Kekeli Dogbevi Jiresse</h1>
       <nav className="side-nav">
         <ul className="nav-ul">
