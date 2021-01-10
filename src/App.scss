@@ -2,14 +2,20 @@
 
 :root {
   --yelow: rgb(251, 226, 0);
+  --dark-en: #0e0e0e;
 }
-
+.container {
+  background: black;
+  min-width: 100vw;
+}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+
 
 .wrapper {
   position: fixed;

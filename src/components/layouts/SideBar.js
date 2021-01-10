@@ -10,7 +10,6 @@ const SideBar = (props) => {
     let tl = gsap.timeline();
     useEffect(() => {
        if (show){
-         console.log('run')
         tl
         .to(
           ref, 0.4, 
