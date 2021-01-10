@@ -54,7 +54,7 @@ const Home = () => {
     .from(
       hi, { duration: 1, y: 20, ease: "power3.out" , onComplete: () => masterTl.play()}
     )
-  })
+  }, [hi, cur, box, textAnim])
 
   return (
     <div className="home">
