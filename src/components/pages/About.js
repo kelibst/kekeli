@@ -2,6 +2,48 @@ import React from "react";
 import Icofont from "react-icofont";
 import "./About.scss";
 const About = () => {
+  const infos = [
+    {
+      name: "4 years Coding",
+      status: "Experience",
+      icon: "badge",
+    },
+    {
+      name: "72 + Projects",
+      status: "Completed",
+      icon: "papers",
+    },
+    {
+      name: "Freelance",
+      status: "Available",
+      icon: "worker",
+    },
+    {
+      name: "Support",
+      status: "24 / 7",
+      icon: "live-support",
+    },
+  ];
+
+  const interests = [
+    {
+      name: "Linux",
+      icon: "dolphin",
+    },
+    {
+      name: "Video Games",
+      icon: "game-controller",
+    },
+    {
+      name: "Engineering",
+      icon: "engineer",
+    },
+    {
+      name: "History",
+      icon: "history",
+    },
+  ];
+
   return (
     <div className="about">
       <h1 className="about-header">About Me</h1>
@@ -39,78 +81,33 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="about-exps">
+       
+        <div className="about-exps"> 
           <div className="about-exp">
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
+            {infos.map((info) => (
+              <div className="about-card" key={info.name}>
+                <div className="about-card-icon">
+                  <Icofont icon={info.icon} />
+                </div>
+                <div className="about-card-details">
+                  <h6 className="about-card-header">{info.name}</h6>
+                  <p className="card-desc">{info.status}</p>
+                </div>
               </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
-
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
-              </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
-
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
-              </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
+            ))}
           </div>
+          
           <div className="interest">
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
+            {interests.map((interest) => (
+              <div className="about-card" key={interest.name}>
+                <div className="interest-card-icon">
+                  <Icofont icon={interest.icon} />
+                </div>
+                <div className="about-card-details">
+                  <h6 className="about-card-header">{interest.name}</h6>
+                </div>
               </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
-
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
-              </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
-
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
-              </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
-
-            <div className="about-card">
-              <div className="about-card-icon">
-                <Icofont icon="user" />
-              </div>
-              <div className="about-card-details">
-                <h6 className="about-card-header">3 years experience</h6>
-                <p className="card-desc">Completed</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

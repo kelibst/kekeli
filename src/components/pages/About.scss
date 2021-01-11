@@ -1,6 +1,6 @@
 @mixin double-container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-gap: 2rem;
   max-width: 900px;
   margin: 3rem auto;
@@ -34,7 +34,8 @@
       align-self: flex-start;
 
       & > i {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        color: var(--yelow)
       }
     }
   }
@@ -129,4 +130,9 @@
 .about-card-header {
   text-transform: capitalize;
   font-weight: bold;
+}
+.interest-card-icon > i {
+    font-size: 1.8rem;
+    color: var(--yelow);
+    margin: 1rem;
 }
