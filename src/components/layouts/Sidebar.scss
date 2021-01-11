@@ -73,6 +73,7 @@ a {
   font-family: "Big Shoulders Stencil Text", cursive;
   margin: 2rem;
   font-weight: 100;
+  font-size: 1.6rem;
 }
 .sidebar {
   min-height: 100vh;
@@ -146,6 +147,10 @@ ul.nav-ul {
   &-li {
     padding: 1rem;
   }
+
+  &-copy{
+    margin-top: 1.5rem;
+  }
 }
 
 .side-nav {
@@ -155,6 +160,7 @@ ul.nav-ul {
 .social {
   bottom: 0;
   position: absolute;
+  margin: 1rem;
 
   &-ul {
     display: flex;

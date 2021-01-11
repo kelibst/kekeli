@@ -34,7 +34,7 @@ const About = () => {
                 Download CV
               </a>
               <a href="#" className="btn btn-yellow hollow">
-                Hire Me.
+                Hire Me
               </a>
             </div>
           </div>
@@ -71,46 +71,45 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+          <div className="interest">
+            <div className="about-card">
+              <div className="about-card-icon">
+                <Icofont icon="user" />
+              </div>
+              <div className="about-card-details">
+                <h6 className="about-card-header">3 years experience</h6>
+                <p className="card-desc">Completed</p>
+              </div>
+            </div>
 
-        <div className="interest">
-          <div className="about-card">
-            <div className="about-card-icon">
-              <Icofont icon="user" />
+            <div className="about-card">
+              <div className="about-card-icon">
+                <Icofont icon="user" />
+              </div>
+              <div className="about-card-details">
+                <h6 className="about-card-header">3 years experience</h6>
+                <p className="card-desc">Completed</p>
+              </div>
             </div>
-            <div className="about-card-details">
-              <h6 className="about-card-header">3 years experience</h6>
-              <p className="card-desc">Completed</p>
-            </div>
-          </div>
 
-          <div className="about-card">
-            <div className="about-card-icon">
-              <Icofont icon="user" />
+            <div className="about-card">
+              <div className="about-card-icon">
+                <Icofont icon="user" />
+              </div>
+              <div className="about-card-details">
+                <h6 className="about-card-header">3 years experience</h6>
+                <p className="card-desc">Completed</p>
+              </div>
             </div>
-            <div className="about-card-details">
-              <h6 className="about-card-header">3 years experience</h6>
-              <p className="card-desc">Completed</p>
-            </div>
-          </div>
 
-          <div className="about-card">
-            <div className="about-card-icon">
-              <Icofont icon="user" />
-            </div>
-            <div className="about-card-details">
-              <h6 className="about-card-header">3 years experience</h6>
-              <p className="card-desc">Completed</p>
-            </div>
-          </div>
-
-          <div className="about-card">
-            <div className="about-card-icon">
-              <Icofont icon="user" />
-            </div>
-            <div className="about-card-details">
-              <h6 className="about-card-header">3 years experience</h6>
-              <p className="card-desc">Completed</p>
+            <div className="about-card">
+              <div className="about-card-icon">
+                <Icofont icon="user" />
+              </div>
+              <div className="about-card-details">
+                <h6 className="about-card-header">3 years experience</h6>
+                <p className="card-desc">Completed</p>
+              </div>
             </div>
           </div>
         </div>
