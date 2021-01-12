@@ -12,10 +12,8 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: center;
 }
-.interest {
-  @include grid-templates();
-}
-.about {
+
+@mixin content {
   color: white;
   display: flex;
   justify-content: center;
@@ -23,6 +21,12 @@
   flex-direction: column;
   background-color: var(--dark-en);
   width: 100%;
+}
+.interest {
+  @include grid-templates();
+}
+.about {
+  @include content();
 
   &-card {
     display: flex;
