@@ -102,6 +102,7 @@ ul.nav-ul {
     border: .5px solid grey;
     z-index: 10;
     position: absolute;
+    top: 45vh;
     
     &:hover {
       background-color: #333;
@@ -117,7 +118,6 @@ ul.nav-ul {
     
   }
   &-container{
-    align-self: center;
     position: relative;
   }
 }

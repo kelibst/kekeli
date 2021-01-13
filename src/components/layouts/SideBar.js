@@ -83,7 +83,7 @@ const SideBar = (props) => {
             </a>
           </li>
         </ul>
-        <p className="side-copy text-center">Kekeli &copy; 2020</p>
+        <p className="side-copy text-center">Kekeli &copy; 2021</p>
       </nav>
     </div>
   );
