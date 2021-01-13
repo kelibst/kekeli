@@ -8,7 +8,7 @@ gsap.registerPlugin(TextPlugin, RoughEase);
 
 const Home = () => {
   const words = [
-    "Kekeli Dogbevi Jiresse",
+    "Keli",
     "A Ruby Developer",
     "A Ruby on Rails Developer",
     "A Front-End Software Developer",
