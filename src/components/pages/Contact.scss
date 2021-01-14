@@ -10,7 +10,7 @@
   display: grid;
   margin: 1rem;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 @mixin content {
@@ -174,5 +174,11 @@ button.con-sub.btn {
     background-color: white;
     transition: all 0.4s;
     border-radius: 1rem;
+  }
+}
+// 540px	720px	960px	1140px
+@media only screen and (max-width: 720px) {
+  div.info{
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   }
 }
