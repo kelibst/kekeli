@@ -81,8 +81,10 @@ a {
   padding: 0;
   background: black;
   color: white;
-  position: relative;
+  position: fixed;
   min-width: 300px;
+  z-index: 10
+  ;
 }
 
 ul.nav-ul {
@@ -92,6 +94,8 @@ ul.nav-ul {
 .reverse{
   transform-origin: center;
   transform: translate(-58px) rotate(180deg) ;
+  left: 300px;
+  transition: all .2s;
 }
 .btn {
   &-menu {
@@ -101,7 +105,7 @@ ul.nav-ul {
     align-self: center;
     border: .5px solid grey;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 45vh;
     
     &:hover {
@@ -118,7 +122,7 @@ ul.nav-ul {
     
   }
   &-container{
-    position: relative;
+    position: absolute;
   }
 }
 .active {
@@ -174,6 +178,19 @@ ul.nav-ul {
       background: var(--yelow);
       border-radius: 0.5rem;
       transition: all 0.2s;
+    }
+  }
+}
+
+// for smaller screens
+// 540px	720px	960px	1140px
+@media only screen and (max-width: 720px) {
+  div.about{
+    display: block;
+
+    &-profile{
+      display: block;
+      margin: 0;
     }
   }
 }

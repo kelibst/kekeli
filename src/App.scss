@@ -8,7 +8,8 @@
 
 .container {
   background: black;
-  min-width: 100vw;
+  min-width: 100vw;  
+  display: flex;
 }
 body {
   padding: 0;
@@ -20,16 +21,12 @@ body {
 
 
 .wrapper {
-  position: fixed;
+  position: relative;
   min-width: 100%;
   min-height: 100%;
   display: flex;
+  overflow: scroll;
 }
-
-.container {
-  display: flex;
-}
-
 .text {
   &-white {
     color: white;
