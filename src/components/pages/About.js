@@ -72,10 +72,10 @@ const About = () => {
             </p>
 
             <div className="btn-contents">
-              <a href="#" className="btn btn-yellow">
+              <a href="https://drive.google.com/file/d/1NIOZ-uV3qdVCgSdO6pg05zHf-op0R0rN/view" className="btn btn-yellow">
                 Download CV
               </a>
-              <a href="#" className="btn btn-yellow hollow">
+              <a href="/contact" className="btn btn-yellow hollow">
                 Hire Me
               </a>
             </div>

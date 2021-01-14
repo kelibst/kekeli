@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Icofont from "react-icofont";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
